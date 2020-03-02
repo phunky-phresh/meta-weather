@@ -4,6 +4,8 @@ import Forecast from './components/pages/Forecast';
 import { HashRouter as Router, Route} from 'react-router-dom';
 import * as ROUTES from './constants/Routes';
 
+import {Wrapper} from './components/styling/style';
+import './App.css';
 
 function App() {
   const [cityCode, setCity] = useState(null);
@@ -14,18 +16,20 @@ function App() {
   }
   
   return (
-    <Router>
-      <Route exact path={ROUTES.HOME}>
-        <Home 
-          handleCity={_handleCity}
-        />
-      </Route>
-      <Route path={ROUTES.FORECAST}>
-        <Forecast 
-          city={cityCode}
-        />
-      </Route>
-    </Router>
+    <Wrapper>
+      <Router>
+        <Route exact path={ROUTES.HOME}>
+          <Home 
+            handleCity={_handleCity}
+          />
+        </Route>
+        <Route path={ROUTES.FORECAST}>
+          <Forecast 
+            city={cityCode}
+          />
+        </Route>
+      </Router>
+    </Wrapper>
   );
 }
 

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 import List from '../List';
+import {Body, Form, Input, Button} from '../styling/style';
 
 function Home(props) {
     
@@ -13,6 +14,7 @@ function Home(props) {
     
     const _handleInput = (e) => {
         setSearch(e.target.value);
+
     }
 
     //get request to api based on user query
@@ -25,6 +27,7 @@ function Home(props) {
             
         })
         //add catch error.
+        setSearch('');
     }
 
 
@@ -46,16 +49,18 @@ function Home(props) {
         })
     }
     return(
-        <div>
-            <form onSubmit={_handleSearch} >
-                <input type="text" value={search} onChange={_handleInput}></input>
-                <input type="submit" value="Search"/>
-            </form>
+        <Body>
+            <Form onSubmit={_handleSearch} >
+                
+                <Input class="input" placeholder="Search Cities..." type="text" value={search} onChange={_handleInput}></Input>
+                <Button type="submit" value="Search"/>
+                
+            </Form>
            
                 {cities}
           
 
-        </div>
+        </Body>
     )
 }
 

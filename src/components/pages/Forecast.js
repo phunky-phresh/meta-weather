@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import WeatherCard from '../WeatherCard';
+import {Body} from '../styling/style';
+
 
 function Forecast(props) {
 
@@ -24,13 +26,16 @@ function Forecast(props) {
       }, []);
 
 
+    if (!cityWeather) {
+      return ''
+    }
     return(
-        <div>
-           <h1>Forecast</h1>
+        <Body>
+           <h1>{cityInfo.title} Forecast</h1>
            <WeatherCard
               weather={cityWeather}
            />
-        </div>
+        </Body>
     )
 }
 
