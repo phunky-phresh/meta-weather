@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
+import List from '../List';
+
 function Home(props) {
     
     
@@ -19,6 +21,8 @@ function Home(props) {
 
         axios.get(`https://www.metaweather.com/api/location/search/?query=${search}`).then( res => {
             setResults(res.data);
+            console.log(res.data);
+            
         })
         //add catch error.
     }
@@ -27,7 +31,18 @@ function Home(props) {
     // map function to produce search results
     if (results) {
         var cities = results.map( city => {
-            return <Link onClick={props.handleCity} to='/forecast' key={city.woeid}><li value={city.woeid}>{city.title}</li></Link>
+            return <Link 
+                        onClick={props.handleCity} 
+                        to='/forecast' 
+                        key={city.woeid}
+                    >
+                        <List 
+                            value={city.woeid}
+                            title={city.title}
+                            type={city.location_type}
+                            lattLong={city.latt_long}
+                        />
+                    </Link>
         })
     }
     return(
@@ -36,9 +51,9 @@ function Home(props) {
                 <input type="text" value={search} onChange={_handleInput}></input>
                 <input type="submit" value="Search"/>
             </form>
-            <ul>
+           
                 {cities}
-            </ul>
+          
 
         </div>
     )
