@@ -10,7 +10,7 @@ export const Body = styled.div`
 `
 
 export const Icon = styled.img`
-    max-width: 30%;
+    max-width: 100%;
 `
 export const Panel = styled.div`
     display: flex;
@@ -18,7 +18,7 @@ export const Panel = styled.div`
     flex-wrap: nowrap;
 `
 export const Day = styled.div`
-
+    margin: 5px auto;
 `
 
 export const Form = styled.form`
