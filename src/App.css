@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
+html {
+    background-color: #ffffff;
+    color: #505050;
+    
+}
 a {
     text-decoration: none;
 }
