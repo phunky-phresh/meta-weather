@@ -31,3 +31,4 @@ npm install
 
 ## What I wanted more time for
 - I wanted to continue with more styling to create a smoother feel with the app. Also with my media queries.
+- I didn't have the chance to create any testing. This is something I want to be able to improve on, expecially with bigger projects
