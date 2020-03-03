@@ -22,7 +22,7 @@ npm install
 ### Styled Components
 - for creating reusable styling 
 - [click here for github](https://github.com/styled-components/styled-components)
-## React Loading
+### React Loading
 - used for loading animation 
 - [click here for github](https://github.com/fakiolinho/react-loading)
 
