@@ -1,7 +1,18 @@
 import styled from 'styled-components';
 
+//////////////
+//Styled components for App.js and Search.Js
 export const Wrapper = styled.div`
     height: 100%;
+`
+export const Title = styled.h1`
+    margin: 0 auto;
+    text-align: center;
+`
+export const Sub = styled.h3`
+    margin: 0 auto;
+    text-align: center;
+    color: #00a8cc;
 `
 export const Body = styled.div`
     max-width: 800px;
@@ -10,7 +21,44 @@ export const Body = styled.div`
         padding: 0 10px;
     }
 `
-
+export const Form = styled.form`
+    margin: auto;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 400px) {
+        width: 100%;
+        padding: 0 10px;
+    }
+`
+export const Input = styled.input`
+    width: 100%;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    border-style: none;
+    background-color: #e6e6e6;
+    padding: 10px;
+    @media (max-width: 400px) {
+        width: 100%;
+        font-size: 20px;
+        height: 40px;
+    }
+`
+export const Button = styled.input`
+    border-style: none;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    background-color: #cfcfcf;
+    color: #00a8cc;
+    @media (max-width: 400px) {
+        height: 40px;
+        font-size: 20px;
+    }
+`
+////////////////////
+// Style components for weatherCard
 export const Icon = styled.img`
     max-width: 80%;
 `
@@ -38,43 +86,8 @@ export const Day = styled.h4`
 export const P = styled.p`
     margin: 5px auto;
 `
-export const Form = styled.form`
-    margin: auto;
-    height: 100px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 400px) {
-        width: 100%;
-        padding: 0 10px;
-    }
-    
-`
-export const Input = styled.input`
-    width: 100%;
-    height: 30px;
-    border-radius: 5px 0 0 5px;
-    border-style: none;
-    background-color: #e6e6e6;
-    @media (max-width: 400px) {
-        width: 100%;
-        font-size: 20px;
-        height: 40px;
-    }
-`
-
-export const Button = styled.input`
-    border-style: none;
-    height: 30px;
-    border-radius: 0 5px 5px 0;
-    background-color: #cfcfcf;
-    color: #00a8cc;
-    @media (max-width: 400px) {
-        height: 40px;
-        font-size: 20px;
-    }
-`
+////////////////////////
+// Styled components for List.js
 export const Item = styled.div`
     background-color: #e6e6e6;
     margin: 5px auto;

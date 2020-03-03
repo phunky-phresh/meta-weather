@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
-import axios from 'axios';
+import React from 'react';
+
 
 import List from '../List';
 import {Body} from '../styling/style';
@@ -14,7 +13,6 @@ function Home(props) {
             
             return <div 
                         onClick={props.handleCity} 
-                        // to='/forecast' 
                         key={city.woeid}
                     >
                         <List 

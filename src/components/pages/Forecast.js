@@ -4,7 +4,7 @@ import ReactLoading from "react-loading";
 
 import WeatherCard from '../WeatherCard';
 
-import {Body} from '../styling/style';
+import {Body, Title} from '../styling/style';
 
 
 function Forecast(props) {
@@ -14,6 +14,7 @@ function Forecast(props) {
     const [cityWeather, setWeather] = useState(null);
     
     useEffect(() => {
+      // once cityCode is passed, useEffect executes axios get request to fetch city data.
       if (cityCode) {
         axios.get(`https://www.metaweather.com/api/location/${cityCode}`).then((res) => {
           const info = res.data;
@@ -22,19 +23,22 @@ function Forecast(props) {
           setInfo(info);
           setWeather(weather);
           
-        }) //add catch error
+        }).catch( err => {
+          console.log(err);       
+        })
       }
       }, []);
 
 
     if (!cityWeather) {
+      // loading animation rendered until weather data has been fetched from api and is ready to load
       return(
         <ReactLoading style={{margin: '0 auto', maxWidth: '20%'}} type={"bars"} color={"black"} />
       )
     }
     return(
         <Body>
-           <h1>{cityInfo.title} Forecast</h1>
+           <Title>{cityInfo.title} Forecast</Title>
            <WeatherCard
               weather={cityWeather}
            />
