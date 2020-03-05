@@ -7,7 +7,7 @@ function Search(props) {
     return(
         <div>
             <Title>World Weather</Title>
-            <Sub>Powered by MetaWewather.com</Sub>
+            <Sub>Powered by MetaWeather.com</Sub>
             <Form onSubmit={props.handleSearch} >
                 
                 <Input className="input" placeholder="Search Cities..." type="text" value={props.search} onChange={props.handleInput}></Input>

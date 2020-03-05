@@ -31,7 +31,7 @@ function Forecast(props) {
 
 
     if (!cityWeather) {
-      // loading animation rendered until weather data has been fetched from api and is ready to load
+      // loading animation rendered until weather data has been fetched from api and is ready to render
       return(
         <ReactLoading style={{margin: '0 auto', maxWidth: '20%'}} type={"bars"} color={"black"} />
       )
