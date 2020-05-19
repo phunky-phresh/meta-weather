@@ -19,7 +19,7 @@ function Forecast(props) {
         axios.get(`https://www.metaweather.com/api/location/${cityCode}`).then((res) => {
           const info = res.data;
           const weather = res.data.consolidated_weather;
-
+          
           setInfo(info);
           setWeather(weather);
           

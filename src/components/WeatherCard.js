@@ -1,7 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
 
-import {Icon, Panel, Day, DayCard, P, Strong} from './styling/style';
+import {Icon, Panel, Day, P, Strong} from './styling/style';
 
 function Card(props) {
         //array daysOfWeek is used to generated day name from api applicable date
@@ -13,7 +15,11 @@ function Card(props) {
             let date = new Date(day.applicable_date)
             let dayIndex = date.getDay();
             
-            return <DayCard key={date}>
+            return <DayCard 
+                    initial={{opacity: 0, y: 50}}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ ease: "easeIn", duration: 1 }}
+                    key={date}>
                         <Day>{daysOfWeek[dayIndex]}</Day>
                         <Icon src={`https://www.metaweather.com/static/img/weather/${day.weather_state_abbr}.svg`} />
                         <P><Strong>{day.weather_state_name}</Strong></P>
@@ -36,6 +42,15 @@ function Card(props) {
             {forecast}          
         </Panel>
     )
-}
+};
+
+const DayCard = styled(motion.div)`
+    margin: 5px auto;
+    @media (max-width: 650px) {
+        margin: 5px auto;
+        
+    }
+`
+
 
 export default Card;

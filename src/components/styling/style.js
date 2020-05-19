@@ -34,24 +34,39 @@ export const Form = styled.form`
     }
 `
 export const Input = styled.input`
+    color: #a0a0a0;
     width: 100%;
     height: 30px;
-    border-radius: 5px 0 0 5px;
+    // border-radius: 5px 0 0 5px;
     border-style: none;
-    background-color: #e6e6e6;
+    // background-color: #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
     padding: 10px;
+    margin: 5px;
     @media (max-width: 400px) {
         width: 100%;
         font-size: 20px;
         height: 40px;
     }
+    ::placeholder {
+        color: #a0a0a0;
+        font-size: 15px;
+    }
+    &:focus {
+        outline: none;
+    }
 `
 export const Button = styled.input`
     border-style: none;
     height: 30px;
-    border-radius: 0 5px 5px 0;
-    background-color: #cfcfcf;
-    color: #00a8cc;
+    font-size: 15px;
+    // border-radius: 5px;
+    // background-color: #cfcfcf;
+    color: #a0a0a0;
+    &:hover {
+        color: #00a8cc;
+
+    }
     @media (max-width: 400px) {
         height: 40px;
         font-size: 20px;
@@ -72,13 +87,7 @@ export const Panel = styled.div`
         
     }
 `
-export const DayCard = styled.div`
-    margin: 5px auto;
-    @media (max-width: 650px) {
-        margin: 5px auto;
-        
-    }
-`
+
 export const Day = styled.h4`
     color: #00a8cc;
     font-size: 20px;
@@ -88,23 +97,7 @@ export const P = styled.p`
 `
 ////////////////////////
 // Styled components for List.js
-export const Item = styled.div`
-    background-color: #e6e6e6;
-    margin: 5px auto;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 5px;
-    * {
-        margin: 0;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 15px;
-        color: #00a8cc;
-    }
-`
+
 export const Strong = styled.span`
     color: black;
     font-weight: bold;
