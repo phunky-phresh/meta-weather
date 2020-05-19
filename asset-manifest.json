@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/meta-weather/static/css/main.c77eba34.chunk.css",
-    "main.js": "/meta-weather/static/js/main.dfcba9f0.chunk.js",
-    "main.js.map": "/meta-weather/static/js/main.dfcba9f0.chunk.js.map",
+    "main.css": "/meta-weather/static/css/main.a354cf2e.chunk.css",
+    "main.js": "/meta-weather/static/js/main.aadcb350.chunk.js",
+    "main.js.map": "/meta-weather/static/js/main.aadcb350.chunk.js.map",
     "runtime-main.js": "/meta-weather/static/js/runtime-main.c390f4d5.js",
     "runtime-main.js.map": "/meta-weather/static/js/runtime-main.c390f4d5.js.map",
-    "static/js/2.e2924b28.chunk.js": "/meta-weather/static/js/2.e2924b28.chunk.js",
-    "static/js/2.e2924b28.chunk.js.map": "/meta-weather/static/js/2.e2924b28.chunk.js.map",
+    "static/js/2.6ab8a75f.chunk.js": "/meta-weather/static/js/2.6ab8a75f.chunk.js",
+    "static/js/2.6ab8a75f.chunk.js.map": "/meta-weather/static/js/2.6ab8a75f.chunk.js.map",
     "index.html": "/meta-weather/index.html",
-    "precache-manifest.4f31a3fb554e9d04cc01267baa2a81bb.js": "/meta-weather/precache-manifest.4f31a3fb554e9d04cc01267baa2a81bb.js",
+    "precache-manifest.35f8e13ec4f1fe8668d11353671c59a8.js": "/meta-weather/precache-manifest.35f8e13ec4f1fe8668d11353671c59a8.js",
     "service-worker.js": "/meta-weather/service-worker.js",
-    "static/css/main.c77eba34.chunk.css.map": "/meta-weather/static/css/main.c77eba34.chunk.css.map",
-    "static/js/2.e2924b28.chunk.js.LICENSE.txt": "/meta-weather/static/js/2.e2924b28.chunk.js.LICENSE.txt"
+    "static/css/main.a354cf2e.chunk.css.map": "/meta-weather/static/css/main.a354cf2e.chunk.css.map",
+    "static/js/2.6ab8a75f.chunk.js.LICENSE.txt": "/meta-weather/static/js/2.6ab8a75f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c390f4d5.js",
-    "static/js/2.e2924b28.chunk.js",
-    "static/css/main.c77eba34.chunk.css",
-    "static/js/main.dfcba9f0.chunk.js"
+    "static/js/2.6ab8a75f.chunk.js",
+    "static/css/main.a354cf2e.chunk.css",
+    "static/js/main.aadcb350.chunk.js"
   ]
 }
