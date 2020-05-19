@@ -50,6 +50,7 @@ const DayCard = styled(motion.div)`
         margin: 5px auto;
         
     }
+   
 `
 
 

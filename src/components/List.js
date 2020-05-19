@@ -35,6 +35,9 @@ const Item = styled(motion.div)`
         font-size: 15px;
         color: #00a8cc;
     }
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export default List;

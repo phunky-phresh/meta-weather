@@ -34,6 +34,8 @@ export const Form = styled.form`
     }
 `
 export const Input = styled.input`
+font-size: 15px;
+
     color: #a0a0a0;
     width: 100%;
     height: 30px;
@@ -54,6 +56,9 @@ export const Input = styled.input`
     }
     &:focus {
         outline: none;
+        ::placeholder {
+            color: transparent;
+        }
     }
 `
 export const Button = styled.input`
@@ -65,7 +70,7 @@ export const Button = styled.input`
     color: #a0a0a0;
     &:hover {
         color: #00a8cc;
-
+        cursor: pointer;
     }
     @media (max-width: 400px) {
         height: 40px;

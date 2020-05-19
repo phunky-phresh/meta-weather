@@ -14,6 +14,7 @@ function Home(props) {
             return <div 
                         onClick={props.handleCity} 
                         key={city.woeid}
+                        value={city.woeid}
                     >
                         <List 
                             onClick={props.handleCity} 
